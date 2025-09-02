@@ -1,0 +1,40 @@
+/* 🌐 Default Theme (Light Mode) */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #222222;
+  --card-bg: #f3f3f3;
+  --btn-bg: #0077ff;
+  --btn-text: #ffffff;
+}
+
+/* 🌙 Dark Mode */
+.dark-mode {
+  --bg-color: #121212;
+  --text-color: #f5f5f5;
+  --card-bg: #1e1e1e;
+  --btn-bg: #00bcd4;
+  --btn-text: #ffffff;
+}
+
+/* General Body */
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--card-bg);
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
